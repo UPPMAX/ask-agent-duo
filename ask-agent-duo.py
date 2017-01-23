@@ -1,4 +1,14 @@
 #!/usr/bin/env python
+#
+# For use as appointed as SSH_ASKPASS when starting ssh-agent, call
+# on the user seconds factor instead.
+#
+# Needs https://github.com/duosecurity/duo_client_python installed
+# or cloned and this script copied to the cloned directory.
+#
+# duo_config should define ikey, skey and api_hostname per your 
+# configuration (see duosecurity.com).
+#
 
 import duo_config
 import duo_client
